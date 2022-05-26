@@ -1,1 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: aqua;
+  padding: 16px;
+  border-bottom: 1px solid;
+}
 
+.main-img {
+  margin-top: 36px;
+}
+
+body {
+  margin: 20px;
+}
+
+img {
+  display: block;
+  border-radius: 0.75rem;
+  width: 50%;
+}
+
+li {
+  list-style: none;
+}
+
+.imgs-li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.images {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  flex: 1;
+}
+
+.info-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+h3 {
+  color: hsl(26, 100%, 55%);
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 16px;
+}
+
+.discount-per {
+  background-color: hsl(25, 100%, 94%);
+  color: hsl(26, 100%, 55%);
+  border-radius: 0.25em;
+  padding: 0.05em 0.25em;
+}
+
+/* cant select desired selector */
+.price-descount {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.main-img img {
+  width: 60%;
+}
+
+.calculated-price {
+  font-size: 35px;
+}
+
+.main-price {
+  text-decoration: line-through;
+}

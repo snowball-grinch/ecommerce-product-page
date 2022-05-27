@@ -3,11 +3,49 @@
   margin: 0;
   padding: 0;
 }
-.header {
-  padding: 16px;
-  border-bottom: 1px solid;
-}
 
+ .nav{
+    display:flex;
+    justify-content:space-between;
+    border-bottom: 1px solid gray;
+  }
+  .profile{
+    gap: 2em;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .menu{
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+  }
+
+  li a {
+    /* padding: 14px 16px; */
+    text-decoration: none;
+    color: gray;
+  }
+
+.avatar{
+    width: 50px;
+    height: 50px;
+    }
+
+.card{
+    width: 25px;
+    height: 25px;
+  
+  }
+
+  .nav-links{
+    display:flex;
+    justify-content:space-between;
+    list-style-type: none;
+    gap: 2em;
+  }
+  
 body {
   margin: 20px 160px;
   font-family: "Kumbh Sans", sans-serif;
@@ -78,7 +116,7 @@ p {
   padding: 0.05em 0.25em;
 }
 
-.price-descount {
+.price-discount {
   display: flex;
   align-items: center;
   gap: 0.5em;

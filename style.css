@@ -1,1 +1,50 @@
+h2{
+    font-size: 40px;
+  }
 
+  .nav{
+    display:flex;
+    justify-content:space-between;
+    border-bottom: 1px solid gray;
+  }
+  .profile{
+    gap: 2em;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .menu{
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+  }
+
+  li a {
+    /* padding: 14px 16px; */
+    text-decoration: none;
+    color: gray;
+  }
+
+.avatar{
+    width: 50px;
+    height: 50px;
+    }
+
+.card{
+    width: 25px;
+    height: 25px;
+  
+  }
+
+  .nav-links{
+    display:flex;
+    justify-content:space-between;
+    list-style-type: none;
+    gap: 2em;
+  }
+  body{
+    margin: 20px 140px;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+  

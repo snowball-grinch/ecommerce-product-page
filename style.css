@@ -1,8 +1,5 @@
-h2{
-    font-size: 40px;
-  }
 
-  .nav{
+ .nav{
     display:flex;
     justify-content:space-between;
     border-bottom: 1px solid gray;
@@ -42,9 +39,5 @@ h2{
     justify-content:space-between;
     list-style-type: none;
     gap: 2em;
-  }
-  body{
-    margin: 20px 140px;
-    font-family: 'Kumbh Sans', sans-serif;
   }
   

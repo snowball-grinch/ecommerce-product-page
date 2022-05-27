@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    
     <link
       rel="icon"
       type="image/png"
@@ -14,8 +12,12 @@
     <link rel="stylesheet" href="style.css" />
 
     <title>E-commerce product page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="script.js"></script>
   </head>
   <body>
@@ -38,8 +40,41 @@
     
     </div>
     <div class="main-content">
-      <div class="images"></div>
-      <div class="info"></div>
+      <div class="images">
+        <img class="main-img" src="images\image-product-1.jpg" />
+        <ul class="imgs-li">
+          <li class="main-img-thumbnail">
+            <img src="images\image-product-1-thumbnail.jpg" />
+          </li>
+          <li>
+            <img src="images\image-product-2-thumbnail.jpg" />
+          </li>
+          <li>
+            <img src="images\image-product-3-thumbnail.jpg" />
+          </li>
+          <li>
+            <img src="images\image-product-4-thumbnail.jpg" />
+          </li>
+        </ul>
+      </div>
+      <div class="info">
+        <h3>SNEAKER COMPANY</h3>
+        <div class="info-desc">
+          <h1>Fall Limited Edition Sneaker</h1>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price">
+            <div class="price-discount">
+              <span class="calculated-price">$125.00</span>
+              <span class="discount-per">50%</span>
+            </div>
+            <span class="main-price">250</span>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

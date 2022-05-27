@@ -4,27 +4,31 @@
   padding: 0;
 }
 .header {
-  background-color: aqua;
   padding: 16px;
   border-bottom: 1px solid;
+}
+
+body {
+  margin: 20px 160px;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 .main-img {
   margin-top: 36px;
 }
 
-body {
-  margin: 20px;
-}
-
-img {
-  display: block;
+.images img {
+  /* display: block; */
   border-radius: 0.75rem;
   width: 50%;
 }
 
 li {
   list-style: none;
+}
+
+div > .main-img {
+  width: 75%;
 }
 
 .imgs-li {
@@ -37,12 +41,14 @@ li {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  align-items: center;
 }
 
 .main-content {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 3em;
 }
 
 .info {
@@ -72,15 +78,10 @@ p {
   padding: 0.05em 0.25em;
 }
 
-/* cant select desired selector */
 .price-descount {
   display: flex;
   align-items: center;
   gap: 0.5em;
-}
-
-.main-img img {
-  width: 60%;
 }
 
 .calculated-price {

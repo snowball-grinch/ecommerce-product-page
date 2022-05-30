@@ -3,11 +3,29 @@
   margin: 0;
   padding: 0;
 }
+body{
+  overflow: hidden;
+}
+html{
+  overflow: hidden;
+}
+header{
+  position: relative;
+}
 
+h1{
+  font-weight:bold;
+ 
+}
+.original{
+  text-decoration:none;
+  color: black;
+}
  .nav{
     display:flex;
     justify-content:space-between;
     border-bottom: 1px solid gray;
+    padding-bottom: 2em;
   }
   .profile{
     gap: 2em;
@@ -20,6 +38,8 @@
    display: flex;
    align-items: center;
    justify-content: flex-start;
+   gap:4em;
+
   }
 
   li a {
@@ -27,10 +47,23 @@
     text-decoration: none;
     color: gray;
   }
+  /* a:hover {
+    color: gray;
+    text-decoration: underline;
+  } */
 
 .avatar{
     width: 50px;
     height: 50px;
+    }
+    .avatar {
+      transition: transform .1s;
+    }
+    
+    .avatar:hover {
+      -ms-transform: scale(1.5); /* IE 9 */
+      -webkit-transform: scale(1.5); /* Safari 3-8 */
+      transform: scale(1.2); 
     }
 
 .card{
@@ -38,16 +71,142 @@
     height: 25px;
   
   }
+  .card {
+    transition: transform .1s;
+  }
+  
+  .card:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
 
   .nav-links{
     display:flex;
     justify-content:space-between;
     list-style-type: none;
     gap: 2em;
+    
+  }
+  .nav-links1{
+    position: relative;
+    padding-bottom: 52px;
   }
   
+  .nav-links1::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 4px;
+    background-color: hsl(26, 100%, 55%);
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .nav-links1:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+  .nav-links2{
+    position: relative;
+    padding-bottom: 52px;
+  }
+  
+  .nav-links2::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 4px;
+    background-color: hsl(26, 100%, 55%);
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .nav-links2:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+  .nav-links3{
+    position: relative;
+    padding-bottom: 52px;
+  }
+  
+  .nav-links3::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 4px;
+    background-color: hsl(26, 100%, 55%);
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .nav-links3:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+  .nav-links4{
+    position: relative;
+    padding-bottom: 52px;
+  }
+  
+  .nav-links4::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 4px;
+    background-color: hsl(26, 100%, 55%);
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .nav-links4:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+  .nav-links5{
+    position: relative;
+    padding-bottom: 52px;
+  }
+  
+  .nav-links5::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 4px;
+    background-color: hsl(26, 100%, 55%);
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .nav-links5:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+  
+  
 body {
-  margin: 20px 160px;
+  margin: 39px 160px;
   font-family: "Kumbh Sans", sans-serif;
 }
 
@@ -78,7 +237,7 @@ div > .main-img {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 2.5em;
   align-items: center;
 }
 
@@ -129,3 +288,29 @@ p {
 .main-price {
   text-decoration: line-through;
 }
+.bars {
+  display: none;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+  

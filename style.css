@@ -55,7 +55,18 @@ h1{
 .avatar{
     width: 50px;
     height: 50px;
+    
     }
+    /* .avatar:hover, .avatar:hover i {
+      color: #eea303;
+      background-color: orangered;
+  }
+  .avatar:hover:after {
+      -webkit-transform: scale(0.85);
+      -moz-transform: scale(0.85);
+      -ms-transform: scale(0.85);
+      transform: scale(0.85);
+  } */
     .avatar {
       transition: transform .1s;
     }
@@ -312,5 +323,59 @@ p {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
+.shop-menu{
+  display: none;
+  align-self:center;
+  width: 16em;
+  height: 10em;
+  background-color:white;
+  box-shadow: 10px -1px 20px gray
+}
+p.shop-menu.title{
+  font-weight:bold;
+  border-bottom: 2px solid black;
+  
+}
+.message-shop{
+  padding:6em 3em;
+  font-size:12px;
+}
+.button{
+   
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 55px 2px;
+    cursor: pointer;
+}
+ /* transition-duration: 0.4s; 
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer; 
+  
+}
+ .button:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s cubic
+}
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s 
+} */
+.button {background-color: #ec7310eb; border-radius: 10px;}
 
   
